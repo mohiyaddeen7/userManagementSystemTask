@@ -19,7 +19,6 @@ const addUser = async (req, res, next) => {
         const savedNewUser = await newUser.save();
         return res.status(201).json({ message: "User Saved to database successfully", data: savedNewUser });
     } catch (error) {
-        console.log("heloo")
         next(error)
     }
 };
@@ -35,8 +34,13 @@ const getUsers = async (req, res, next) => {
 
 const getUsersByFilter = async (req, res, next) => {
     try {
-        const { page = 1, limit = 10, age, name, userId, email, gender, mobileNo, deleted } = req.query;
+        const { age, name, userId, email, gender, mobileNo, deleted } = req.query;
         const errors = [];
+
+        const page = req.query.page !== undefined ? isNaN(req.query.page) ? errors.push("Enter a valid page number") : parseInt(req.query.page) : 1;
+
+        const limit = req.query.limit !== undefined ? isNaN(req.query.limit) ? errors.push("Enter a valid page size (limit)") : parseInt(req.query.limit) : 10;
+
 
         const filterUser = {};
 

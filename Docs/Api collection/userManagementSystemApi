@@ -1,0 +1,341 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "UserManagmentSystem",
+    "dateExported": "2024-03-23T06:24:25.093Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f36e55b4-e29a-4419-b841-a51d786b6b3d",
+            "name": "Hosted Api's",
+            "containerId": "",
+            "created": "2024-03-23T05:59:26.334Z",
+            "sortNum": 10000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "9ba88b7c-7cff-471e-a5f4-23cea67b70e0",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "",
+            "name": "Add user",
+            "url": "http://localhost:5000/api/users/addUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-22T14:44:24.071Z",
+            "modified": "2024-03-23T06:18:52.559Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Raza\",\n  \"email\":\"atu@gmail.com        \",\n  \"age\":18,\n  \"gender\":\"Male\",\n  \"address\":\"asd\",\n  \"mobileNo\":\"1234567890\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "11295d80-2fd6-4274-9422-06cb56491f64",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "f36e55b4-e29a-4419-b841-a51d786b6b3d",
+            "name": "Add user ",
+            "url": "https://usermanagementsystemtask.onrender.com/api/users/addUser",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-23T05:59:46.276Z",
+            "modified": "2024-03-23T06:03:52.420Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"Raza\",\n  \"email\":\"atc@gmail.com        \",\n  \"age\":18,\n  \"gender\":\"Male\",\n  \"address\":\"asd\",\n  \"mobileNo\":\"1234567892\"\n  \n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d00cb08f-02dd-4182-b8fc-945dc2c2a847",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "f36e55b4-e29a-4419-b841-a51d786b6b3d",
+            "name": "Get all users by filter ",
+            "url": "https://usermanagementsystemtask.onrender.com/api/users/getUsersByFilter?gender=Male&deleted=false&name=Raza&mobileNo=1234567898",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-03-23T05:59:54.551Z",
+            "modified": "2024-03-23T06:05:07.770Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "gender",
+                    "value": "Male",
+                    "isPath": false
+                },
+                {
+                    "name": "deleted",
+                    "value": "false",
+                    "isPath": false
+                },
+                {
+                    "name": "name",
+                    "value": "Raza",
+                    "isPath": false
+                },
+                {
+                    "name": "mobileNo",
+                    "value": "1234567898",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "ebad39cf-5099-461b-81bc-d1185d9ea7c2",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "f36e55b4-e29a-4419-b841-a51d786b6b3d",
+            "name": "Soft delete a user by userId ",
+            "url": "https://usermanagementsystemtask.onrender.com/api/users/softDelete/userId=65fda70656e13f8b708f86ad",
+            "method": "DELETE",
+            "sortNum": 16250,
+            "created": "2024-03-23T06:00:44.600Z",
+            "modified": "2024-03-23T06:04:56.954Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c16bf975-d1ff-4695-a64d-184acafbcc98",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "f36e55b4-e29a-4419-b841-a51d786b6b3d",
+            "name": "Update user by email id ",
+            "url": "https://usermanagementsystemtask.onrender.com/api/users/updateUser/emailId=asv@gmail.com",
+            "method": "PUT",
+            "sortNum": 17500,
+            "created": "2024-03-23T06:00:34.302Z",
+            "modified": "2024-03-23T06:04:58.075Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"gender\":\"mohiyaddeen\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bdf65a29-afc5-475d-9558-7e21d936389a",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "",
+            "name": "Get all users",
+            "url": "http://localhost:5000/api/users/getUsers",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-22T15:39:54.418Z",
+            "modified": "2024-03-22T15:46:16.700Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d3fa66b8-84c5-4811-a999-34ce86708108",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "f36e55b4-e29a-4419-b841-a51d786b6b3d",
+            "name": "Get all users ",
+            "url": "https://usermanagementsystemtask.onrender.com/api/users/getUsers",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-23T05:59:50.233Z",
+            "modified": "2024-03-23T06:04:58.891Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "0c189631-b3f3-4a6f-9ad0-0e773f57d06c",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "",
+            "name": "Get all users by filter",
+            "url": "http://localhost:5000/api/users/getUsersByFilter?gender=Male&deleted=false&name=Raza&mobileNo=1234567898",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2024-03-23T04:08:54.480Z",
+            "modified": "2024-03-23T05:25:34.010Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "gender",
+                    "value": "Male",
+                    "isPath": false
+                },
+                {
+                    "name": "deleted",
+                    "value": "false",
+                    "isPath": false
+                },
+                {
+                    "name": "name",
+                    "value": "Raza",
+                    "isPath": false
+                },
+                {
+                    "name": "mobileNo",
+                    "value": "1234567898",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "e3b09e46-2322-483c-8fad-f67f8a0b1f7f",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "f36e55b4-e29a-4419-b841-a51d786b6b3d",
+            "name": "hard delete a user by userId  ",
+            "url": "https://usermanagementsystemtask.onrender.com/api/users/hardDelete/userId=65fda70656e13f8b708f86ad",
+            "method": "DELETE",
+            "sortNum": 25000,
+            "created": "2024-03-23T06:00:53.663Z",
+            "modified": "2024-03-23T06:05:00.112Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e1304c8e-139b-49e9-b95c-14b4a1871909",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "",
+            "name": "Update a user using userId",
+            "url": "http://localhost:5000/api/users/updateUser/userId=65fda3c7be5881036aad3fca",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-22T15:52:06.297Z",
+            "modified": "2024-03-23T04:49:08.580Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"deleted\": false\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "885bdf5b-d516-4d91-8d14-f68b1e7f81b6",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "f36e55b4-e29a-4419-b841-a51d786b6b3d",
+            "name": "Update a user using userId ",
+            "url": "https://usermanagementsystemtask.onrender.com/api/users/updateUser/userId=65fda3c7be5881036aad3fca",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-23T06:00:17.866Z",
+            "modified": "2024-03-23T06:05:01.300Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"deleted\": false\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3a5ad005-3d41-4c60-a77f-06bcaac5765c",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "",
+            "name": "Update user by email id",
+            "url": "http://localhost:5000/api/users/updateUser/emailId=asv@gmail.com",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-22T16:26:09.617Z",
+            "modified": "2024-03-22T16:30:24.723Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"gender\":\"mohiyaddeen\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7fafc769-9dcc-4c83-9ab0-2997d74795cc",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "f36e55b4-e29a-4419-b841-a51d786b6b3d",
+            "name": "Soft delete a user by emailId ",
+            "url": "https://usermanagementsystemtask.onrender.com/api/users/softDelete/emailId=asb@gmail.com",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-23T06:01:09.843Z",
+            "modified": "2024-03-23T06:05:02.305Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c608d8e0-fdde-4aff-bb9b-4d77b16c6f7b",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "",
+            "name": "Soft delete a user by userId",
+            "url": "http://localhost:5000/api/users/softDelete/userId=65fda70656e13f8b708f86ad",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-23T03:32:01.099Z",
+            "modified": "2024-03-23T03:38:00.435Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "33757dba-31dc-4029-8f11-387ae81b8dfc",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "f36e55b4-e29a-4419-b841-a51d786b6b3d",
+            "name": "hard delete a user by emailId",
+            "url": "https://usermanagementsystemtask.onrender.com/api/users/hardDelete/emailId=asat@gmail.com",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-23T06:01:22.699Z",
+            "modified": "2024-03-23T06:05:03.420Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "95d33f4c-c175-4144-9728-a864c3ef462b",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "",
+            "name": "hard delete a user by userId ",
+            "url": "http://localhost:5000/api/users/hardDelete/userId=65fda70656e13f8b708f86ad",
+            "method": "DELETE",
+            "sortNum": 55000,
+            "created": "2024-03-23T05:11:23.526Z",
+            "modified": "2024-03-23T05:11:43.091Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f7c7ad1d-a3b5-4d8b-82cb-19a8f0a88bba",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "",
+            "name": "Soft delete a user by emailId",
+            "url": "http://localhost:5000/api/users/softDelete/emailId=asb@gmail.com",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-23T05:10:40.895Z",
+            "modified": "2024-03-23T05:13:34.527Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b1d893d2-61cb-46d5-89bf-88f927b77844",
+            "colId": "fd13d2f8-89e6-4284-acfc-e6edf4e58490",
+            "containerId": "",
+            "name": "hard delete a user by emailId ",
+            "url": "http://localhost:5000/api/users/hardDelete/emailId=asat@gmail.com",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-03-23T05:11:21.411Z",
+            "modified": "2024-03-23T05:14:44.982Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
