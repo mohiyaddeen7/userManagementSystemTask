@@ -1,7 +1,7 @@
+require("dotenv").config();
 module.exports = {
     database: {
-        mongodbURI: 'mongodb://localhost:27017/',
-        dbName: 'userManagementDb'
+        mongodbURI: process.env.mongodbURI
     },
-    port: 5000,
+    port: process.env.port,
 };
